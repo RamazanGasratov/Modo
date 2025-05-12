@@ -11,6 +11,7 @@
 		AD07BF2E2DCA5B3F00A6E85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD07BF282DCA5B3F00A6E85D /* Assets.xcassets */; };
 		AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF292DCA5B3F00A6E85D /* ContentView.swift */; };
 		AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */; };
+		AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB3C92DD262D300B43117 /* MainWindowView.swift */; };
 		ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */; };
 		ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 		AD07BF2A2DCA5B3F00A6E85D /* Modo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Modo.entitlements; sourceTree = "<group>"; };
 		AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoApp.swift; sourceTree = "<group>"; };
 		AD21C4C52DCA14710019432C /* Modo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5DB3C92DD262D300B43117 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
 		ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
 		ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoAppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		AD07BF312DCA5B4200A6E85D /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				AD5DB3C82DD262A800B43117 /* MainWindow */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -97,6 +100,14 @@
 				AD21C4C52DCA14710019432C /* Modo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD5DB3C82DD262A800B43117 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				AD5DB3C92DD262D300B43117 /* MainWindowView.swift */,
+			);
+			path = MainWindow;
 			sourceTree = "<group>";
 		};
 		ADFB4D982DCB466100CD2D2A /* Components */ = {
@@ -198,6 +209,7 @@
 			files = (
 				AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */,
 				ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */,
+				AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */,
 				ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */,
 				AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */,
 			);
