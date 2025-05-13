@@ -6,33 +6,96 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		AD21C4C52DCA14710019432C /* Modo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		AD07BF2D2DCA5B3F00A6E85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD07BF262DCA5B3F00A6E85D /* Preview Assets.xcassets */; };
+		AD07BF2E2DCA5B3F00A6E85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD07BF282DCA5B3F00A6E85D /* Assets.xcassets */; };
+		AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF292DCA5B3F00A6E85D /* ContentView.swift */; };
+		AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */; };
+		AD4780002DD394C5009DC577 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AD477FFF2DD394C5009DC577 /* HotKey */; };
+		AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780022DD3E311009DC577 /* FloatingHelper.swift */; };
+		AD4780052DD3E472009DC577 /* FadingBorderTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */; };
+		AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB3C92DD262D300B43117 /* MainWindowView.swift */; };
+		ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */; };
+		ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AD21C4C72DCA14710019432C /* Modo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Modo;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		AD07BF262DCA5B3F00A6E85D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD07BF282DCA5B3F00A6E85D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD07BF292DCA5B3F00A6E85D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD07BF2A2DCA5B3F00A6E85D /* Modo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Modo.entitlements; sourceTree = "<group>"; };
+		AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoApp.swift; sourceTree = "<group>"; };
+		AD21C4C52DCA14710019432C /* Modo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4780022DD3E311009DC577 /* FloatingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingHelper.swift; sourceTree = "<group>"; };
+		AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadingBorderTimerView.swift; sourceTree = "<group>"; };
+		AD5DB3C92DD262D300B43117 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
+		ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoAppConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD21C4C22DCA14710019432C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4780002DD394C5009DC577 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD07BF272DCA5B3F00A6E85D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD07BF262DCA5B3F00A6E85D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD07BF2C2DCA5B3F00A6E85D /* Modo */ = {
+			isa = PBXGroup;
+			children = (
+				ADFB4D9B2DCB501600CD2D2A /* Shared */,
+				ADFB4D982DCB466100CD2D2A /* Components */,
+				AD07BF332DCA5B5900A6E85D /* Resource */,
+				AD07BF322DCA5B4A00A6E85D /* App */,
+				AD07BF312DCA5B4200A6E85D /* Feature */,
+				AD07BF272DCA5B3F00A6E85D /* Preview Content */,
+				AD07BF292DCA5B3F00A6E85D /* ContentView.swift */,
+				AD07BF2A2DCA5B3F00A6E85D /* Modo.entitlements */,
+			);
+			path = Modo;
+			sourceTree = "<group>";
+		};
+		AD07BF312DCA5B4200A6E85D /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AD5DB3C82DD262A800B43117 /* MainWindow */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AD07BF322DCA5B4A00A6E85D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD07BF332DCA5B5900A6E85D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AD07BF282DCA5B3F00A6E85D /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		AD21C4BC2DCA14710019432C = {
 			isa = PBXGroup;
 			children = (
-				AD21C4C72DCA14710019432C /* Modo */,
+				AD07BF2C2DCA5B3F00A6E85D /* Modo */,
 				AD21C4C62DCA14710019432C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +106,48 @@
 				AD21C4C52DCA14710019432C /* Modo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4780012DD3E2F4009DC577 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD4780022DD3E311009DC577 /* FloatingHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AD5DB3C82DD262A800B43117 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				AD5DB3C92DD262D300B43117 /* MainWindowView.swift */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		ADFB4D982DCB466100CD2D2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD4780012DD3E2F4009DC577 /* Helpers */,
+				ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */,
+				AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ADFB4D9B2DCB501600CD2D2A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ADFB4D9C2DCB501F00CD2D2A /* Constants */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ADFB4D9C2DCB501F00CD2D2A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +165,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				AD21C4C72DCA14710019432C /* Modo */,
-			);
 			name = Modo;
 			packageProductDependencies = (
+				AD477FFF2DD394C5009DC577 /* HotKey */,
 			);
 			productName = Modo;
 			productReference = AD21C4C52DCA14710019432C /* Modo.app */;
@@ -94,6 +197,9 @@
 			);
 			mainGroup = AD21C4BC2DCA14710019432C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AD477FFE2DD394C5009DC577 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AD21C4C62DCA14710019432C /* Products */;
 			projectDirPath = "";
@@ -109,6 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD07BF2D2DCA5B3F00A6E85D /* Preview Assets.xcassets in Resources */,
+				AD07BF2E2DCA5B3F00A6E85D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */,
+				AD4780052DD3E472009DC577 /* FadingBorderTimerView.swift in Sources */,
+				ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */,
+				AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */,
+				AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */,
+				ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */,
+				AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +383,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ooo.modo.Modo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Debug;
@@ -305,10 +420,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ooo.modo.Modo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
@@ -335,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD477FFE2DD394C5009DC577 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD477FFF2DD394C5009DC577 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD477FFE2DD394C5009DC577 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD21C4BD2DCA14710019432C /* Project object */;
 }
