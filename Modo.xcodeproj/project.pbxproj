@@ -13,8 +13,12 @@
 		AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */; };
 		AD4780002DD394C5009DC577 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AD477FFF2DD394C5009DC577 /* HotKey */; };
 		AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780022DD3E311009DC577 /* FloatingHelper.swift */; };
-		AD4780052DD3E472009DC577 /* FadingBorderTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */; };
 		AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB3C92DD262D300B43117 /* MainWindowView.swift */; };
+		ADEBF2212DD4D64500E7C5A9 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2202DD4D64500E7C5A9 /* CircularProgressView.swift */; };
+		ADEBF2232DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2222DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift */; };
+		ADF893C42DD470CD0021E4ED /* FloatingWindowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C32DD470CD0021E4ED /* FloatingWindowModifier.swift */; };
+		ADF893C62DD471240021E4ED /* MenuBarExtraContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C52DD471240021E4ED /* MenuBarExtraContent.swift */; };
+		ADF893C92DD475480021E4ED /* FloatingWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C82DD475480021E4ED /* FloatingWindowView.swift */; };
 		ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */; };
 		ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */; };
 /* End PBXBuildFile section */
@@ -27,8 +31,13 @@
 		AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoApp.swift; sourceTree = "<group>"; };
 		AD21C4C52DCA14710019432C /* Modo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4780022DD3E311009DC577 /* FloatingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingHelper.swift; sourceTree = "<group>"; };
-		AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadingBorderTimerView.swift; sourceTree = "<group>"; };
+		AD4780262DD3E894009DC577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD5DB3C92DD262D300B43117 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		ADEBF2202DD4D64500E7C5A9 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		ADEBF2222DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowViewModel.swift; sourceTree = "<group>"; };
+		ADF893C32DD470CD0021E4ED /* FloatingWindowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowModifier.swift; sourceTree = "<group>"; };
+		ADF893C52DD471240021E4ED /* MenuBarExtraContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraContent.swift; sourceTree = "<group>"; };
+		ADF893C82DD475480021E4ED /* FloatingWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowView.swift; sourceTree = "<group>"; };
 		ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
 		ADFB4D9D2DCB504900CD2D2A /* ModoAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoAppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +65,7 @@
 		AD07BF2C2DCA5B3F00A6E85D /* Modo */ = {
 			isa = PBXGroup;
 			children = (
+				AD4780262DD3E894009DC577 /* Info.plist */,
 				ADFB4D9B2DCB501600CD2D2A /* Shared */,
 				ADFB4D982DCB466100CD2D2A /* Components */,
 				AD07BF332DCA5B5900A6E85D /* Resource */,
@@ -71,6 +81,7 @@
 		AD07BF312DCA5B4200A6E85D /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				ADF893C72DD4751A0021E4ED /* FloatingWindow */,
 				AD5DB3C82DD262A800B43117 /* MainWindow */,
 			);
 			path = Feature;
@@ -124,12 +135,31 @@
 			path = MainWindow;
 			sourceTree = "<group>";
 		};
+		ADF893C22DD470AF0021E4ED /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ADF893C32DD470CD0021E4ED /* FloatingWindowModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		ADF893C72DD4751A0021E4ED /* FloatingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				ADF893C82DD475480021E4ED /* FloatingWindowView.swift */,
+				ADEBF2222DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift */,
+			);
+			path = FloatingWindow;
+			sourceTree = "<group>";
+		};
 		ADFB4D982DCB466100CD2D2A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ADF893C22DD470AF0021E4ED /* Modifiers */,
 				AD4780012DD3E2F4009DC577 /* Helpers */,
 				ADFB4D992DCB467F00CD2D2A /* MenuBarExtraView.swift */,
-				AD4780042DD3E472009DC577 /* FadingBorderTimerView.swift */,
+				ADF893C52DD471240021E4ED /* MenuBarExtraContent.swift */,
+				ADEBF2202DD4D64500E7C5A9 /* CircularProgressView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,13 +257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEBF2232DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift in Sources */,
 				AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */,
-				AD4780052DD3E472009DC577 /* FadingBorderTimerView.swift in Sources */,
+				ADF893C42DD470CD0021E4ED /* FloatingWindowModifier.swift in Sources */,
+				ADF893C62DD471240021E4ED /* MenuBarExtraContent.swift in Sources */,
 				ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */,
 				AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */,
+				ADF893C92DD475480021E4ED /* FloatingWindowView.swift in Sources */,
 				AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */,
 				ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */,
 				AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */,
+				ADEBF2212DD4D64500E7C5A9 /* CircularProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +399,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Modo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Modo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Modo использует ваш календарь, чтобы строить таймеры на сегодня.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -402,6 +438,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Modo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Modo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Modo использует ваш календарь, чтобы строить таймеры на сегодня.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
