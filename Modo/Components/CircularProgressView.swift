@@ -29,8 +29,7 @@ struct CircularProgressView: View {
                 .frame(width: size, height: size)
 
             Text(timeString)
-                .font(.caption2)
-                .monospacedDigit()
+                .font(.system(size: 9))
         }
     }
 }

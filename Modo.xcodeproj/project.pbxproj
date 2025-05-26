@@ -11,6 +11,8 @@
 		AD07BF2E2DCA5B3F00A6E85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD07BF282DCA5B3F00A6E85D /* Assets.xcassets */; };
 		AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF292DCA5B3F00A6E85D /* ContentView.swift */; };
 		AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */; };
+		AD2302722DD613DD00D6E581 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2302712DD613DD00D6E581 /* CalendarService.swift */; };
+		AD2353B42DE44A2500DE2034 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2353B32DE44A2500DE2034 /* CalendarModel.swift */; };
 		AD4780002DD394C5009DC577 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AD477FFF2DD394C5009DC577 /* HotKey */; };
 		AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780022DD3E311009DC577 /* FloatingHelper.swift */; };
 		AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB3C92DD262D300B43117 /* MainWindowView.swift */; };
@@ -30,6 +32,8 @@
 		AD07BF2A2DCA5B3F00A6E85D /* Modo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Modo.entitlements; sourceTree = "<group>"; };
 		AD07BF2B2DCA5B3F00A6E85D /* ModoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoApp.swift; sourceTree = "<group>"; };
 		AD21C4C52DCA14710019432C /* Modo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2302712DD613DD00D6E581 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		AD2353B32DE44A2500DE2034 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		AD4780022DD3E311009DC577 /* FloatingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingHelper.swift; sourceTree = "<group>"; };
 		AD4780262DD3E894009DC577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD5DB3C92DD262D300B43117 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 		AD07BF2C2DCA5B3F00A6E85D /* Modo */ = {
 			isa = PBXGroup;
 			children = (
+				AD2302702DD613BD00D6E581 /* Services */,
 				AD4780262DD3E894009DC577 /* Info.plist */,
 				ADFB4D9B2DCB501600CD2D2A /* Shared */,
 				ADFB4D982DCB466100CD2D2A /* Components */,
@@ -117,6 +122,23 @@
 				AD21C4C52DCA14710019432C /* Modo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD2302702DD613BD00D6E581 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD2302712DD613DD00D6E581 /* CalendarService.swift */,
+				AD2353B22DE44A0100DE2034 /* Model */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD2353B22DE44A0100DE2034 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2353B32DE44A2500DE2034 /* CalendarModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AD4780012DD3E2F4009DC577 /* Helpers */ = {
@@ -259,11 +281,13 @@
 			files = (
 				ADEBF2232DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift in Sources */,
 				AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */,
+				AD2353B42DE44A2500DE2034 /* CalendarModel.swift in Sources */,
 				ADF893C42DD470CD0021E4ED /* FloatingWindowModifier.swift in Sources */,
 				ADF893C62DD471240021E4ED /* MenuBarExtraContent.swift in Sources */,
 				ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */,
 				AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */,
 				ADF893C92DD475480021E4ED /* FloatingWindowView.swift in Sources */,
+				AD2302722DD613DD00D6E581 /* CalendarService.swift in Sources */,
 				AD4780032DD3E311009DC577 /* FloatingHelper.swift in Sources */,
 				ADFB4D9E2DCB504900CD2D2A /* ModoAppConstants.swift in Sources */,
 				AD07BF302DCA5B3F00A6E85D /* ModoApp.swift in Sources */,
