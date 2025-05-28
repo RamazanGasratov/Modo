@@ -179,7 +179,6 @@ struct TimerRow: View {
                .foregroundColor(isFinished ? .gray : .primary)
                .strikethrough(isFinished)
         
-        // Здесь основные «реакции» на изменения модели:
         .onChange(of: event.startDate, { _ , _ in
             let dur = event.endDate.timeIntervalSince(event.startDate)
             initialDuration = dur
@@ -216,6 +215,7 @@ struct TimerRow: View {
                     remaining = 0
                     isRunning = false
                     subscription?.cancel()
+                    NotificationManager.shared.scheduleTimerFinishedNotification(for: event)
                 }
             }
     }

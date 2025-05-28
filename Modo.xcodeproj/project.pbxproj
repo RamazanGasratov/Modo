@@ -18,6 +18,7 @@
 		AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB3C92DD262D300B43117 /* MainWindowView.swift */; };
 		ADEBF2212DD4D64500E7C5A9 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2202DD4D64500E7C5A9 /* CircularProgressView.swift */; };
 		ADEBF2232DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2222DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift */; };
+		ADECD14B2DE6F6A6003C66AB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADECD14A2DE6F6A5003C66AB /* NotificationManager.swift */; };
 		ADF893C42DD470CD0021E4ED /* FloatingWindowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C32DD470CD0021E4ED /* FloatingWindowModifier.swift */; };
 		ADF893C62DD471240021E4ED /* MenuBarExtraContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C52DD471240021E4ED /* MenuBarExtraContent.swift */; };
 		ADF893C92DD475480021E4ED /* FloatingWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF893C82DD475480021E4ED /* FloatingWindowView.swift */; };
@@ -39,6 +40,7 @@
 		AD5DB3C92DD262D300B43117 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
 		ADEBF2202DD4D64500E7C5A9 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		ADEBF2222DD4D6BD00E7C5A9 /* FloatingWindowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowViewModel.swift; sourceTree = "<group>"; };
+		ADECD14A2DE6F6A5003C66AB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		ADF893C32DD470CD0021E4ED /* FloatingWindowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowModifier.swift; sourceTree = "<group>"; };
 		ADF893C52DD471240021E4ED /* MenuBarExtraContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraContent.swift; sourceTree = "<group>"; };
 		ADF893C82DD475480021E4ED /* FloatingWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		AD2302702DD613BD00D6E581 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ADECD1492DE6F67C003C66AB /* Notification */,
 				AD2302712DD613DD00D6E581 /* CalendarService.swift */,
 				AD2353B22DE44A0100DE2034 /* Model */,
 			);
@@ -155,6 +158,14 @@
 				AD5DB3C92DD262D300B43117 /* MainWindowView.swift */,
 			);
 			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		ADECD1492DE6F67C003C66AB /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				ADECD14A2DE6F6A5003C66AB /* NotificationManager.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		ADF893C22DD470AF0021E4ED /* Modifiers */ = {
@@ -283,6 +294,7 @@
 				AD07BF2F2DCA5B3F00A6E85D /* ContentView.swift in Sources */,
 				AD2353B42DE44A2500DE2034 /* CalendarModel.swift in Sources */,
 				ADF893C42DD470CD0021E4ED /* FloatingWindowModifier.swift in Sources */,
+				ADECD14B2DE6F6A6003C66AB /* NotificationManager.swift in Sources */,
 				ADF893C62DD471240021E4ED /* MenuBarExtraContent.swift in Sources */,
 				ADFB4D9A2DCB467F00CD2D2A /* MenuBarExtraView.swift in Sources */,
 				AD5DB3CA2DD262D300B43117 /* MainWindowView.swift in Sources */,
